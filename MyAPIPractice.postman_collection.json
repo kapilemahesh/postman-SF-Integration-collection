@@ -1,0 +1,758 @@
+{
+	"info": {
+		"_postman_id": "dfb8449b-2424-4b26-b9a6-13d3f4d1a9fe",
+		"name": "MyAPIPractice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36191454"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Username-Password-flow",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=3MVG9WVXk15qiz1I8ahprLCBFhzPwsUZXJ1.TC_j3golwmwxse74VpGhX5Jf33l9HFhI.9jO7Z8nC4wXJ0ydB&client_secret=EC8D9E2F52D3BEE4AF95C9E79AAA301255DA52FF811CE8B0EF3A6A4AED011A67&username=maheshkapile@salesforce.com&password=deva45221",
+							"protocol": "https",
+							"host": [
+								"login",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"token"
+							],
+							"query": [
+								{
+									"key": "grant_type",
+									"value": "password"
+								},
+								{
+									"key": "client_id",
+									"value": "3MVG9WVXk15qiz1I8ahprLCBFhzPwsUZXJ1.TC_j3golwmwxse74VpGhX5Jf33l9HFhI.9jO7Z8nC4wXJ0ydB"
+								},
+								{
+									"key": "client_secret",
+									"value": "EC8D9E2F52D3BEE4AF95C9E79AAA301255DA52FF811CE8B0EF3A6A4AED011A67"
+								},
+								{
+									"key": "username",
+									"value": "maheshkapile@salesforce.com"
+								},
+								{
+									"key": "password",
+									"value": "deva45221"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Username-Password-flow-Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=3MVG9WVXk15qiz1I8ahprLCBFhzPwsUZXJ1.TC_j3golwmwxse74VpGhX5Jf33l9HFhI.9jO7Z8nC4wXJ0ydB&client_secret=EC8D9E2F52D3BEE4AF95C9E79AAA301255DA52FF811CE8B0EF3A6A4AED011A67&username=maheshkapile@salesforce.com&password=deva45221",
+									"protocol": "https",
+									"host": [
+										"login",
+										"salesforce",
+										"com"
+									],
+									"path": [
+										"services",
+										"oauth2",
+										"token"
+									],
+									"query": [
+										{
+											"key": "grant_type",
+											"value": "password"
+										},
+										{
+											"key": "client_id",
+											"value": "3MVG9WVXk15qiz1I8ahprLCBFhzPwsUZXJ1.TC_j3golwmwxse74VpGhX5Jf33l9HFhI.9jO7Z8nC4wXJ0ydB"
+										},
+										{
+											"key": "client_secret",
+											"value": "EC8D9E2F52D3BEE4AF95C9E79AAA301255DA52FF811CE8B0EF3A6A4AED011A67"
+										},
+										{
+											"key": "username",
+											"value": "maheshkapile@salesforce.com"
+										},
+										{
+											"key": "password",
+											"value": "deva45221"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 29 Jun 2024 14:28:09 GMT"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+								},
+								{
+									"key": "X-ReadOnlyMode",
+									"value": "false"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"00DdM000004zM6C!AQEAQEaT.ZxPK0igDwoMUJ7AchcjLY9CI0tyVzbP2xntgk6LyhhQAKFwlTAi0eNjNkhjH8c4WoNAvS7TDKF7Xu6x_thf8NQU\",\n    \"instance_url\": \"https://cloudolicsoftwaresolution-dev-ed.develop.my.salesforce.com\",\n    \"id\": \"https://login.salesforce.com/id/00DdM000004zM6CUAU/005dM000003A5XlQAK\",\n    \"token_type\": \"Bearer\",\n    \"issued_at\": \"1719671290825\",\n    \"signature\": \"Mf393T7Fk6EtWbgSaJJOTVPHyQmjuEnyUzojaDHG8l0=\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "APIS",
+			"item": [
+				{
+					"name": "Get Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{instance_url}}/services/apexrest/AccountRest/:AccountId",
+							"host": [
+								"{{instance_url}}"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"AccountRest",
+								":AccountId"
+							],
+							"variable": [
+								{
+									"key": "AccountId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Account Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{instance_url}}/services/apexrest/AccountRest/:AccountId",
+									"host": [
+										"{{instance_url}}"
+									],
+									"path": [
+										"services",
+										"apexrest",
+										"AccountRest",
+										":AccountId"
+									],
+									"variable": [
+										{
+											"key": "AccountId",
+											"value": "001dM00000CEUgYQAX"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 29 Jun 2024 14:38:38 GMT"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "none"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"attributes\": {\n        \"type\": \"Account\",\n        \"url\": \"/services/data/v61.0/sobjects/Account/001dM00000CEUgYQAX\"\n    },\n    \"Id\": \"001dM00000CEUgYQAX\",\n    \"Name\": \"Edge Communications\",\n    \"Industry\": \"Electronics\",\n    \"Rating\": \"Hot\",\n    \"Active__c\": \"Yes\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Contact",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Get Contact Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{instance_url}}/services/apexrest/ContactRest/?id=003dM000002X1IkQAK&lastname=Holmes",
+									"host": [
+										"{{instance_url}}"
+									],
+									"path": [
+										"services",
+										"apexrest",
+										"ContactRest",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "003dM000002X1IkQAK"
+										},
+										{
+											"key": "lastname",
+											"value": "Holmes"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 30 Jun 2024 13:02:56 GMT"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "none"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"attributes\": {\n        \"type\": \"Contact\",\n        \"url\": \"/services/data/v61.0/sobjects/Contact/003dM000002X1IkQAK\"\n    },\n    \"Id\": \"003dM000002X1IkQAK\",\n    \"FirstName\": \"Brad\",\n    \"LastName\": \"Holmes\",\n    \"Email\": \"bholmes@goodmail.com\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Account",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{instance_url}}/services/apexrest/AccountRest/:AccountId",
+							"host": [
+								"{{instance_url}}"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"AccountRest",
+								":AccountId"
+							],
+							"variable": [
+								{
+									"key": "AccountId",
+									"value": "001dM00000DOiuEQAT"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Account Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{instance_url}}/services/apexrest/AccountRest/:AccountId",
+									"host": [
+										"{{instance_url}}"
+									],
+									"path": [
+										"services",
+										"apexrest",
+										"AccountRest",
+										":AccountId"
+									],
+									"variable": [
+										{
+											"key": "AccountId",
+											"value": "001dM00000DOiuEQAT"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 30 Jun 2024 13:05:02 GMT"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "none"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "\"Account deleted successfully.\""
+						}
+					]
+				},
+				{
+					"name": "Delete Contact",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{instance_url}}/services/apexrest/ContactRest/?id=003dM000002YqoBQAS",
+							"host": [
+								"{{instance_url}}"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"ContactRest",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "003dM000002YqoBQAS"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Contact Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{instance_url}}/services/apexrest/ContactRest/?id=003dM000002YqoBQAS",
+									"host": [
+										"{{instance_url}}"
+									],
+									"path": [
+										"services",
+										"apexrest",
+										"ContactRest",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "003dM000002YqoBQAS"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 30 Jun 2024 13:13:58 GMT"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "none"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "\"Contact deleted successfully.\""
+						}
+					]
+				},
+				{
+					"name": "Create Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{instance_url}}/services/apexrest/AccountRest/?name=Test Account 1&rating=Hot&industry=Media&active=Yes",
+							"host": [
+								"{{instance_url}}"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"AccountRest",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Test Account 1"
+								},
+								{
+									"key": "rating",
+									"value": "Hot"
+								},
+								{
+									"key": "industry",
+									"value": "Media"
+								},
+								{
+									"key": "active",
+									"value": "Yes"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Account Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{instance_url}}/services/apexrest/AccountRest/?name=Test Account 1&rating=Hot&industry=Media&active=Yes",
+									"host": [
+										"{{instance_url}}"
+									],
+									"path": [
+										"services",
+										"apexrest",
+										"AccountRest",
+										""
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Test Account 1"
+										},
+										{
+											"key": "rating",
+											"value": "Hot"
+										},
+										{
+											"key": "industry",
+											"value": "Media"
+										},
+										{
+											"key": "active",
+											"value": "Yes"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 30 Jun 2024 13:21:34 GMT"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "none"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"attributes\": {\n        \"type\": \"Account\",\n        \"url\": \"/services/data/v61.0/sobjects/Account/001dM00000FJOE7QAP\"\n    },\n    \"Name\": \"Test Account 1\",\n    \"Rating\": \"Hot\",\n    \"Active__c\": \"Yes\",\n    \"Industry\": null,\n    \"Id\": \"001dM00000FJOE7QAP\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Create Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\" : \"Mahesh\",\r\n    \"LastName\" : \"Kapile\",\r\n    \"Email\" : \"kapilemahesh97@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{instance_url}}/services/apexrest/ContactRest/"
+			},
+			"response": [
+				{
+					"name": "Create Contact Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\" : \"Mahesh\",\r\n    \"LastName\" : \"Kapile\",\r\n    \"Email\" : \"kapilemahesh97@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{instance_url}}/services/apexrest/ContactRest/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 30 Jun 2024 13:58:17 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"attributes\": {\n        \"type\": \"Contact\",\n        \"url\": \"/services/data/v61.0/sobjects/Contact/003dM000002uLzuQAE\"\n    },\n    \"Email\": \"kapilemahesh97@gmail.com\",\n    \"FirstName\": \"Mahesh\",\n    \"LastName\": \"Kapile\",\n    \"Id\": \"003dM000002uLzuQAE\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": {
+			"scope": "",
+			"grant_type": "implicit",
+			"accessTokenUrl": "https://login.salesforce.com/services/oauth2/token",
+			"authUrl": "https://login.salesforce.com/services/oauth2/authorize",
+			"addTokenTo": "header",
+			"client_authentication": "body",
+			"useBrowser": false,
+			"clientSecret": "{{client_secret}}",
+			"clientId": "{{client_Id}}",
+			"tokenName": "SF_Token_1",
+			"redirect_uri": "https://login.salesforce.com/callback"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "instance_url",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "client_Id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "client_secret",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
