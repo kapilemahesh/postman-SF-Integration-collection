@@ -180,10 +180,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{instance_url}}/services/apexrest/AccountRest/:AccountId",
-									"host": [
-										"{{instance_url}}"
-									],
+									"raw": "/services/apexrest/AccountRest/:AccountId",
 									"path": [
 										"services",
 										"apexrest",
@@ -257,10 +254,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{instance_url}}/services/apexrest/ContactRest/?id=003dM000002X1IkQAK&lastname=Holmes",
-									"host": [
-										"{{instance_url}}"
-									],
+									"raw": "/services/apexrest/ContactRest/?id=003dM000002X1IkQAK&lastname=Holmes",
 									"path": [
 										"services",
 										"apexrest",
@@ -356,10 +350,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{instance_url}}/services/apexrest/AccountRest/:AccountId",
-									"host": [
-										"{{instance_url}}"
-									],
+									"raw": "/services/apexrest/AccountRest/:AccountId",
 									"path": [
 										"services",
 										"apexrest",
@@ -443,10 +434,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{instance_url}}/services/apexrest/ContactRest/?id=003dM000002YqoBQAS",
-									"host": [
-										"{{instance_url}}"
-									],
+									"raw": "/services/apexrest/ContactRest/?id=003dM000002YqoBQAS",
 									"path": [
 										"services",
 										"apexrest",
@@ -542,10 +530,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{instance_url}}/services/apexrest/AccountRest/?name=Test Account 1&rating=Hot&industry=Media&active=Yes",
-									"host": [
-										"{{instance_url}}"
-									],
+									"raw": "/services/apexrest/AccountRest/?name=Test Account 1&rating=Hot&industry=Media&active=Yes",
 									"path": [
 										"services",
 										"apexrest",
@@ -617,29 +602,10 @@
 							"body": "{\n    \"attributes\": {\n        \"type\": \"Account\",\n        \"url\": \"/services/data/v61.0/sobjects/Account/001dM00000FJOE7QAP\"\n    },\n    \"Name\": \"Test Account 1\",\n    \"Rating\": \"Hot\",\n    \"Active__c\": \"Yes\",\n    \"Industry\": null,\n    \"Id\": \"001dM00000FJOE7QAP\"\n}"
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "Create Contact",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"FirstName\" : \"Mahesh\",\r\n    \"LastName\" : \"Kapile\",\r\n    \"Email\" : \"kapilemahesh97@gmail.com\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
 				},
-				"url": "{{instance_url}}/services/apexrest/ContactRest/"
-			},
-			"response": [
 				{
-					"name": "Create Contact Example",
-					"originalRequest": {
+					"name": "Create Contact",
+					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -653,49 +619,310 @@
 						},
 						"url": "{{instance_url}}/services/apexrest/ContactRest/"
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": [
 						{
-							"key": "Date",
-							"value": "Sun, 30 Jun 2024 13:58:17 GMT"
-						},
-						{
-							"key": "Strict-Transport-Security",
-							"value": "max-age=63072000; includeSubDomains"
-						},
-						{
-							"key": "X-Content-Type-Options",
-							"value": "nosniff"
-						},
-						{
-							"key": "X-Robots-Tag",
-							"value": "none"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json;charset=UTF-8"
-						},
-						{
-							"key": "Vary",
-							"value": "Accept-Encoding"
-						},
-						{
-							"key": "Content-Encoding",
-							"value": "gzip"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
+							"name": "Create Contact Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"FirstName\" : \"Mahesh\",\r\n    \"LastName\" : \"Kapile\",\r\n    \"Email\" : \"kapilemahesh97@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "/services/apexrest/ContactRest/"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 30 Jun 2024 13:58:17 GMT"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "none"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"attributes\": {\n        \"type\": \"Contact\",\n        \"url\": \"/services/data/v61.0/sobjects/Contact/003dM000002uLzuQAE\"\n    },\n    \"Email\": \"kapilemahesh97@gmail.com\",\n    \"FirstName\": \"Mahesh\",\n    \"LastName\": \"Kapile\",\n    \"Id\": \"003dM000002uLzuQAE\"\n}"
 						}
-					],
-					"cookie": [],
-					"body": "{\n    \"attributes\": {\n        \"type\": \"Contact\",\n        \"url\": \"/services/data/v61.0/sobjects/Contact/003dM000002uLzuQAE\"\n    },\n    \"Email\": \"kapilemahesh97@gmail.com\",\n    \"FirstName\": \"Mahesh\",\n    \"LastName\": \"Kapile\",\n    \"Id\": \"003dM000002uLzuQAE\"\n}"
+					]
+				},
+				{
+					"name": "Wrapper Get Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{instance_url}}/services/apexrest/WrapperRest/:AccountId",
+							"host": [
+								"{{instance_url}}"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"WrapperRest",
+								":AccountId"
+							],
+							"variable": [
+								{
+									"key": "AccountId",
+									"value": "001dM00000CEUgdQAH"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Wrapper Get Account Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "/services/apexrest/WrapperRest/:AccountId",
+									"path": [
+										"services",
+										"apexrest",
+										"WrapperRest",
+										":AccountId"
+									],
+									"variable": [
+										{
+											"key": "AccountId",
+											"value": "001dM00000CEUgdQAH"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 01 Jul 2024 14:07:54 GMT"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "none"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"isActive\": true,\n    \"accRating\": \"Hot\",\n    \"accName\": \"United Oil & Gas Corp.\",\n    \"accIndustry\": \"Energy\",\n    \"accId\": \"001dM00000CEUgdQAH\",\n    \"accContacts\": [\n        {\n            \"conLastName\": \"Bahadur\",\n            \"conId\": \"003dM000002wANeQAM\",\n            \"conFirstName\": \"Sam\",\n            \"conEmail\": \"sam@google.com\"\n        },\n        {\n            \"conLastName\": \"Joker\",\n            \"conId\": \"003dM000002wIzVQAU\",\n            \"conFirstName\": \"Johny\",\n            \"conEmail\": \"johny@gmail.com\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Wrapper Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isActive\": true,\r\n    \"accRating\": \"Hot\",\r\n    \"accName\": \"REST Account\",\r\n    \"accIndustry\": \"Energy\",\r\n    \"accContacts\": [\r\n        {\r\n            \"conLastName\": \"Ghatak\",\r\n            \"conFirstName\": \"Janwar\",\r\n            \"conEmail\": \"ghatak@google.com\"\r\n        },\r\n        {\r\n            \"conLastName\": \"Life\",\r\n            \"conFirstName\": \"Mirror\",\r\n            \"conEmail\": \"mirror@gmail.com\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{instance_url}}/services/apexrest/WrapperRest/"
+					},
+					"response": [
+						{
+							"name": "Create Wrapper Account Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isActive\": true,\r\n    \"accRating\": \"Hot\",\r\n    \"accName\": \"REST Account\",\r\n    \"accIndustry\": \"Energy\",\r\n    \"accContacts\": [\r\n        {\r\n            \"conLastName\": \"Ghatak\",\r\n            \"conFirstName\": \"Janwar\",\r\n            \"conEmail\": \"ghatak@google.com\"\r\n        },\r\n        {\r\n            \"conLastName\": \"Life\",\r\n            \"conFirstName\": \"Mirror\",\r\n            \"conEmail\": \"mirror@gmail.com\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "/services/apexrest/WrapperRest/"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 01 Jul 2024 14:28:37 GMT"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "none"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"isActive\": true,\n    \"accRating\": \"Hot\",\n    \"accName\": \"REST Account\",\n    \"accIndustry\": \"Energy\",\n    \"accId\": \"001dM00000FXLmdQAH\",\n    \"accContacts\": [\n        {\n            \"conLastName\": \"Ghatak\",\n            \"conId\": \"003dM000002wLMHQA2\",\n            \"conFirstName\": \"Janwar\",\n            \"conEmail\": \"ghatak@google.com\"\n        },\n        {\n            \"conLastName\": \"Life\",\n            \"conId\": \"003dM000002wLMIQA2\",\n            \"conFirstName\": \"Mirror\",\n            \"conEmail\": \"mirror@gmail.com\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Wrapper Account",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isActive\": true,\r\n    \"accRating\": \"Cold\",\r\n    \"accName\": \"REST Account\",\r\n    \"accIndustry\": \"Energy\",\r\n    \"accId\": \"001dM00000FXLmdQAH\",\r\n    \"accContacts\": [\r\n        {\r\n            \"conLastName\": \"Ghatak\",\r\n            \"conId\": \"003dM000002wLMHQA2\",\r\n            \"conFirstName\": \"Janwar\",\r\n            \"conEmail\": \"janwar@google.com\"\r\n        },\r\n        {\r\n            \"conLastName\": \"Life\",\r\n            \"conId\": \"003dM000002wLMIQA2\",\r\n            \"conFirstName\": \"Mirror\",\r\n            \"conEmail\": \"life@gmail.com\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{instance_url}}/services/apexrest/WrapperRest/"
+					},
+					"response": [
+						{
+							"name": "Update Wrapper Account Example",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isActive\": true,\r\n    \"accRating\": \"Cold\",\r\n    \"accName\": \"REST Account\",\r\n    \"accIndustry\": \"Energy\",\r\n    \"accId\": \"001dM00000FXLmdQAH\",\r\n    \"accContacts\": [\r\n        {\r\n            \"conLastName\": \"Ghatak\",\r\n            \"conId\": \"003dM000002wLMHQA2\",\r\n            \"conFirstName\": \"Janwar\",\r\n            \"conEmail\": \"janwar@google.com\"\r\n        },\r\n        {\r\n            \"conLastName\": \"Life\",\r\n            \"conId\": \"003dM000002wLMIQA2\",\r\n            \"conFirstName\": \"Mirror\",\r\n            \"conEmail\": \"life@gmail.com\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "/services/apexrest/WrapperRest/"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 01 Jul 2024 14:33:33 GMT"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "none"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"isActive\": true,\n    \"accRating\": \"Cold\",\n    \"accName\": \"REST Account\",\n    \"accIndustry\": \"Energy\",\n    \"accId\": \"001dM00000FXLmdQAH\",\n    \"accContacts\": [\n        {\n            \"conLastName\": \"Ghatak\",\n            \"conId\": \"003dM000002wLMHQA2\",\n            \"conFirstName\": \"Janwar\",\n            \"conEmail\": \"janwar@google.com\"\n        },\n        {\n            \"conLastName\": \"Life\",\n            \"conId\": \"003dM000002wLMIQA2\",\n            \"conFirstName\": \"Mirror\",\n            \"conEmail\": \"life@gmail.com\"\n        }\n    ]\n}"
+						}
+					]
 				}
 			]
 		}
